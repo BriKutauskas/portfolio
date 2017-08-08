@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="dropdown open">
+    <i class="fa fa-3x fa-bars clickable dropdown-toggle" (click)="dropdown()"></i>
+    <ul class="dropdown-menu" *ngIf="showDropDown">
+      <li><span class="clickable" (click)="setSelected('about-me')" (mouseenter)="onToggle('about-me','active')" (mouseleave)="onToggle('about-me','inactive')">About Me</span></li>
+      <li><span class="clickable" (click)="setSelected('resume')" (mouseenter)="onToggle('resume','active')" (mouseleave)="onToggle('resume','inactive')">Resume</span></li>
+      <li><span class="clickable" (click)="setSelected('projects')" (mouseenter)="onToggle('projects','active')" (mouseleave)="onToggle('projects','inactive')">Projects</span></li>
+      <li><span class="clickable" (click)="setSelected('hobbies')" (mouseenter)="onToggle('hobbies','active')" (mouseleave)="onToggle('hobbies','inactive')">Hobbies</span></li>
+    </ul>
+  </div>
+</div>

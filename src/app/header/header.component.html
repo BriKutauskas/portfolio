@@ -1,0 +1,33 @@
+<div class="header">
+  <div class="header-left col-sm-2">
+    <app-menu (selected)="setSelected($event)" (hover)="hoverState($event)">
+    </app-menu>
+  </div>
+  <div class="title col-sm-8">
+    <span>
+      BRI KUTAUSKAS
+    </span>
+    <br>
+    <span>
+      CREATIVE DEVELOPER
+    </span>
+  </div>
+  <div class="header-right col-sm-2">
+    <div class="icon-box fl">
+      <i class="fa fa-envelope-open-o fa-2x clickable fl" (click)="showDetails('email')"></i>
+    </div>
+    <div class="icon-box fl">
+      <a href="https://www.linkedin.com/in/brianna-kutauskas/" target="_blank"><i class="fa fa-linkedin fa-2x fl" aria-hidden="true"></i></a>
+    </div>
+    <div class="icon-box fl">
+      <i class="fa fa-mobile fa-2x clickable fl" aria-hidden="true" (click)="showDetails('phone')"></i>
+    </div>
+    <div class="icon-box fl">
+      <a href="https://github.com/BriKutauskas" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+    </div>
+    <div class="slideOut">
+      <span *ngIf="phone">(303)345-1673</span>
+      <span *ngIf="email">bkutauskas@gmail.com</span>
+    </div>
+  </div>
+</div>

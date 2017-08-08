@@ -1,0 +1,13 @@
+.dropdown{
+  padding-top: 25px;
+  i{
+    color: #fff;
+  }
+  .dropdown-menu li {
+    padding: 3px 0 3px 6px;
+    font-size: 16pt;
+    &:hover {
+      background-color: #d4ceaa;
+    }
+  }
+}

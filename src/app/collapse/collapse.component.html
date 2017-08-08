@@ -1,0 +1,20 @@
+<div class="before-click"
+     [@expandBackgroundAnimation]="trigger" (click)="close()">
+</div>
+
+  <div class="collapse-position"
+    [@expandAnimation]="trigger">
+
+    <div class="collapse clickable" (click)="expand()">
+
+      <div class="content-header">
+        <h1> <span> {{ title }} </span></h1>
+      </div>
+
+      <div class="body-content">
+        <ng-content></ng-content>
+      </div>
+
+    </div>
+
+  </div>

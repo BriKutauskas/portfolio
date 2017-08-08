@@ -1,0 +1,16 @@
+<div class="pop-up-background" *ngIf="visible">
+  <div class="pop-up">
+
+    <header>
+      <i class="fa fa-times-circle-o fr" aria-hidden="true" (click)="close()"></i>
+    </header>
+
+    <form>
+      <ul>
+        <li *ngFor="let item of items"><i class="fa" [class.fa-square-o]="selected !== item" [class.fa-check-square-o]="selected === item" (click)="setSelected(item)"></i>{{ item }}</li>
+      </ul>
+      <input type="submit" />
+    </form>
+
+  </div>
+</div>

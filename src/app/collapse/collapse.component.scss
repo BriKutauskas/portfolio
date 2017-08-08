@@ -1,0 +1,49 @@
+.before-click{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.collapse-position{
+  position: fixed;
+  margin: auto;
+  background: #FFF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.75) 0%, #FFF 70%, #FFF 100%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.75) 0%, #FFF 70%, #FFF 100%);
+  transition: all;
+  overflow: scroll;
+  border-radius: 10px;
+  color: #636363;
+  line-height: 37px;
+  z-index: 999;
+  .collapse{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    .content-header{
+      text-align: center;
+      padding-top: 80px;
+      h1{
+      border-bottom: 1px solid black;
+      line-height: 0;
+      padding: 0;
+      margin: 10px 100px 10px 100px;
+        span{
+          background: #FFF;
+          padding: 0 15px;
+        }
+      }
+    }
+    .body-content{
+      font-size: 1.5em;
+      padding: 50px 100px 50px 100px;
+
+    }
+  }
+}
